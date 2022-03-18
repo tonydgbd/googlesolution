@@ -42,6 +42,7 @@ dependencies:
   cloud_firestore: ^3.1.10
   flutterfire_ui: ^0.3.2
   google_maps_flutter: ^2.1.2
+  mapbox_gl: ^0.15.0
 
 dev_dependencies:
   flutter_test:
