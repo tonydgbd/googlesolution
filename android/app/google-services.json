@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "798250947112",
+    "project_id": "job-bitcs23",
+    "storage_bucket": "job-bitcs23.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:798250947112:android:1221532111ad9041a39b1d",
+        "android_client_info": {
+          "package_name": "com.example.google_solution"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "798250947112-i9hb6k2f8vs1hrcdmkr1689buqm55po8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.google_solution",
+            "certificate_hash": "d2a4e91f175f23affacff7bca19ea603c7af8806"
+          }
+        },
+        {
+          "client_id": "798250947112-d49ih35b0uvf57a23lav6s70j945n575.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKu22IVYy5zPc_TmRLM1rD87MO-2QAdss"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "798250947112-d49ih35b0uvf57a23lav6s70j945n575.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
