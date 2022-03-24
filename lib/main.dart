@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_solution/Screens/Welcome/welcome_screen.dart';
 import 'package:google_solution/constants/firebase_auth_conts.dart';
+import 'package:google_solution/controllers/Map_search_Controller.dart';
 import 'package:google_solution/controllers/auth_controler.dart';
 import 'package:google_solution/controllers/firestore_db.dart';
 
@@ -10,6 +11,8 @@ void main() async {
   await firebaseInitialization.then((value) {
     Get.put(AuthController());
     Get.put(FirestoreDb());
+    Get.put(MapController());
+
   });
   runApp(const MyApp());
 }

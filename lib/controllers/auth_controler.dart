@@ -26,27 +26,18 @@ class AuthController extends GetxController {
     
     firebaseUser = Rx<User?>(auth.currentUser);
     googleSignInAccount = Rx<GoogleSignInAccount?>(googleSign.currentUser);
-      
-      
     firebaseUser.bindStream(auth.userChanges());
     ever(firebaseUser, _setInitialScreen);
-
-    
     googleSignInAccount.bindStream(googleSign.onCurrentUserChanged);
     ever(googleSignInAccount, _setInitialScreenGoogle);
   }
 
   _setInitialScreen(User? user) {
     if (user == null) {
-        
-      // if the user is not found then the user is navigated to the Register Screen
       Get.offAll(() =>  WelcomeScreen());
-        
     } else {
-        
       // if the user exists and logged in the the user is navigated to the Home Screen
       Get.offAll(() => MapView());
-        
     }
   }
 
@@ -138,6 +129,8 @@ class AuthController extends GetxController {
   FirestoreDb.CreateUserProfil({
         "latitude":LocationData.latitude,
         "longitude":LocationData.longitude,
+        "name":auth.currentUser!.displayName,
+        "categories":FieldValue.arrayUnion([]),
   });
 });
   }
